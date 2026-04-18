@@ -118,18 +118,17 @@ export default function AIAssistant() {
         { role: "user" as const, content: userContent },
       ];
 
-      const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
-          "HTTP-Referer": window.location.origin,
-          "X-Title": "NUCLEUS",
+          Authorization: `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "openrouter/free",
+          model: "llama-3.3-70b-versatile",
           messages: apiMessages,
           temperature: 0.7,
+          max_tokens: 2048,
         }),
       });
 
@@ -138,7 +137,7 @@ export default function AIAssistant() {
         console.error("Connectivity Failure Diagnostic:", {
           status: res.status,
           error: errData,
-          keyPresent: !!import.meta.env.VITE_OPENROUTER_API_KEY
+          keyPresent: !!import.meta.env.VITE_GROQ_API_KEY
         });
         throw new Error(errData?.error?.message || `API error: ${res.status}`);
       }
@@ -159,9 +158,9 @@ export default function AIAssistant() {
       const errMsg: Message = {
         id: Date.now(),
         role: "assistant",
-        content: `❌ **Connection Error**: ${err.message || "Something went wrong"}. 
-        
-Please ensure your **VITE_OPENROUTER_API_KEY** is correctly set in your environment and that you have redeployed. 
+        content: `❌ **Connection Error**: ${err.message || "Something went wrong"}.
+
+Please ensure your **VITE_GROQ_API_KEY** is correctly set in your environment and that you have redeployed.
 
 ✨ **NUCLEUS_X Tip**: While we fix this, you can always **copy-paste** your problems or text directly into the chat for instant analysis!`,
         timestamp: new Date()
