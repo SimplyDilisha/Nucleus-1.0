@@ -1,4 +1,4 @@
-#  Nucleus 1.01.0
+#  Nucleus 
 
 > **A Next-Generation Web-Based Computational Chemistry Ecosystem.**
 > 
@@ -13,7 +13,7 @@
 
 Traditional chemical education and computational chemistry research often rely on static, 2D representations of complex, 3D phenomena. This limits our intuitive understanding of quantum mechanics, molecular geometry, and thermodynamics. 
 
-**Nucleus 1.01,0** was built to bridge the gap between theoretical physics and interactive experimentation. By shifting heavy computational rendering to the browser via WebGL and integrating spatial computing, Nucleus 1.01.0 delivers an immersive, high-fidelity chemistry lab directly to your screen and no proprietary desktop software or VR headsets required.
+**Nucleus** was built to bridge the gap between theoretical physics and interactive experimentation. By shifting heavy computational rendering to the browser via WebGL and integrating spatial computing, Nucleus 1.01.0 delivers an immersive, high-fidelity chemistry lab directly to your screen and no proprietary desktop software or VR headsets required.
 
 ##  Core Features
 
@@ -25,7 +25,7 @@ Traditional chemical education and computational chemistry research often rely o
 
 ##  System Architecture & Tech Stack
 
-Nucleus 1.01.0 is engineered for performance, utilizing a modern frontend stack to handle heavy 3D math and state management seamlessly.
+Nucleus is engineered for performance, utilizing a modern frontend stack to handle heavy 3D math and state management seamlessly.
 
 * **Frontend:** React.js, Vite
 * **Styling & Animation:** Tailwind CSS, Framer Motion (Glassmorphism UI)
