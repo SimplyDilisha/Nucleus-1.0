@@ -22,7 +22,7 @@ export default function BohrModel({ atomicNumber }: BohrModelProps) {
 
   return (
     <group ref={groupRef}>
-      {/* Nucleus - cluster of protons (red) and neutrons (blue) */}
+      {/* Nucleus 1.0- cluster of protons (red) and neutrons (blue) */}
       {Array.from({ length: Math.min(nucleusCount + neutronCount, 30) }).map((_, i) => {
         const total = Math.min(nucleusCount + neutronCount, 30);
         const phi = Math.acos(1 - 2 * (i + 0.5) / total);
@@ -50,7 +50,7 @@ export default function BohrModel({ atomicNumber }: BohrModelProps) {
         );
       })}
 
-      {/* Nucleus core glow */}
+      {/* Nucleus 1.0core glow */}
       <pointLight position={[0, 0, 0]} color="#ff6644" intensity={0.6} distance={4} />
 
       {/* Electron shells */}
@@ -84,7 +84,7 @@ export default function BohrModel({ atomicNumber }: BohrModelProps) {
 
       {/* Legend removed from 3D space - now rendered natively in ElementDetail */}
 
-      {/* Soft ambient glow at nucleus */}
+      {/* Soft ambient glow at Nucleus 1.0*/}
       <pointLight position={[0, 0, 0]} color="#00F0FF" intensity={0.4} distance={5} />
     </group>
   );

@@ -88,7 +88,7 @@ export default function HeisenbergCloud({ atomicNumber, uncertainty }: Heisenber
 
   return (
     <group>
-      {/* Nucleus */}
+      {/* Nucleus 1.0*/}
       <mesh>
         <sphereGeometry args={[0.15, 16, 16]} />
         <meshStandardMaterial

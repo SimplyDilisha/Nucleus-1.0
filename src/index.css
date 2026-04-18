@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 /* ─────────────────────────────────────────
-   NUCLEUS Design Tokens — Final Master
+   Nucleus 1.0Design Tokens — Final Master
    Primary   = Cyan        #00E5FF
    Secondary = Blue        #006EFF
    Accent    = Pink        #FF6496
@@ -90,7 +90,7 @@
 .font-mono-data { font-family: 'JetBrains Mono', monospace; }
 
 @layer utilities {
-  /* ─── Shared NUCLEUS background (apply to EVERY page) ─── */
+  /* ─── Shared Nucleus 1.0background (apply to EVERY page) ─── */
   .nucleus-bg {
     background: #060709;
     background-image:

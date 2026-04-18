@@ -1,5 +1,5 @@
 /**
- * NUCLEUS Virtual Lab — Thermodynamic State Manager
+ * Nucleus 1.0Virtual Lab — Thermodynamic State Manager
  * Provides scientifically accurate enthalpy calculations, molarity tracking,
  * and reaction state management for the virtual chemistry lab.
  */

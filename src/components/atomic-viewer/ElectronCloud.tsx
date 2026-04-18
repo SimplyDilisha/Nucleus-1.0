@@ -44,7 +44,7 @@ export default function ElectronCloud({ atomicNumber }: ElectronCloudProps) {
 
   return (
     <group>
-      {/* Nucleus glow */}
+      {/* Nucleus 1.0glow */}
       <mesh>
         <sphereGeometry args={[0.25, 16, 16]} />
         <meshStandardMaterial

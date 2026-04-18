@@ -15,7 +15,7 @@ export default function MatrixRain({ color = '#00F0FF', speed = 1 }: MatrixRainP
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Chemistry-themed characters for the NUCLEUS app
+    // Chemistry-themed characters for the Nucleus 1.0app
     const chemChars = 'HHeOCNFClBrArNeKrXeRnSiPSAlMgNaCaFeTiCuZnAgAuPtPbUΔλσπΩφψαβγ∞Σ∫∂⬡⚗☢∇≈±ΨΘ'.split('');
     const fontSize = 14;
 

@@ -207,7 +207,7 @@ Please ensure your **VITE_OPENROUTER_API_KEY** is correctly set in your environm
           </div>
           <div>
             <h1 className="text-lg font-bold tracking-widest text-primary text-glow-cyan">
-              NUCLEUS AI
+              Nucleus 1.0AI
             </h1>
             <p className="text-[9px] text-muted-foreground/60 uppercase tracking-[0.2em] font-medium italic">
               POWERED BY NUCLEUS_X ENGINE
@@ -281,7 +281,7 @@ Please ensure your **VITE_OPENROUTER_API_KEY** is correctly set in your environm
               <Sparkles className="w-8 h-8 text-primary" />
             </div>
             <div className="text-center space-y-2">
-              <h2 className="text-lg font-bold text-foreground">NUCLEUS AI Assistant</h2>
+              <h2 className="text-lg font-bold text-foreground">Nucleus 1.0AI Assistant</h2>
               <p className="text-sm text-muted-foreground max-w-md">
                 Ask me anything about chemistry — reactions, structures, calculations, lab procedures, and more.
                 I support <span className="text-primary font-medium">rich markdown</span> formatting in my responses.
@@ -446,7 +446,7 @@ Please ensure your **VITE_OPENROUTER_API_KEY** is correctly set in your environm
           </motion.button>
         </form>
         <p className="text-[9px] text-white/30 text-center mt-3 uppercase tracking-widest font-mono">
-          NUCLEUS_X ENGINE • NUCLEUS AI IS STILL IN DEVELOPMENT AND CAN MAKE MISTAKES
+          NUCLEUS_X ENGINE • Nucleus 1.0AI IS STILL IN DEVELOPMENT AND CAN MAKE MISTAKES
         </p>
       </div>
     </motion.div>

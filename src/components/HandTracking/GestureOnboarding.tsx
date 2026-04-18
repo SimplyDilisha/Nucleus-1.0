@@ -136,7 +136,7 @@ export default function GestureOnboarding({
                   Before we begin...
                 </h2>
                 <p className="text-xs text-white/40" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-                  Learn these {GESTURE_CARDS.length} gestures to control Nucleus hands-free
+                  Learn these {GESTURE_CARDS.length} gestures to control Nucleus 1.0hands-free
                 </p>
               </div>
 

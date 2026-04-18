@@ -36,16 +36,16 @@ const team: TeamMember[] = [
     }
   },
   {
-    name: "Anushka Chatterjee",
+    name: "Dilisha",
     role: "Contributor",
-    regId: "25BCE11276",
+    regId: "",
     icon: Atom,
     gradient: "from-[#ff8844] to-[#ff4400]",
     glowColor: "hsl(25 100% 55% / 0.25)",
     neonHex: "#ff8844",
   },
   {
-    name: "Raghav Bansal",
+    name: "Arghyadeep Gope",
     role: "Contributor",
     regId: "25BCE11321",
     icon: Cpu,
@@ -256,12 +256,6 @@ export default function Creators() {
             <MemberCard member={team[1]} index={1} />
             <MemberCard member={team[2]} index={2} />
           </div>
-
-          {/* Row 3: Contributors 3 & 4 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-            <MemberCard member={team[3]} index={3} />
-            <MemberCard member={team[4]} index={4} />
-          </div>
         </div>
 
         {/* Footer */}
@@ -279,7 +273,7 @@ export default function Creators() {
             }}
           >
             <p className="text-[10px] text-muted-foreground/40 tracking-[0.3em] uppercase font-light">
-              NUCLEUS • QUANTUM SPATIAL ENGINE • FORGING THE FUTURE AT THE ATOMIC LEVEL
+              Nucleus 1.0• QUANTUM SPATIAL ENGINE • FORGING THE FUTURE AT THE ATOMIC LEVEL
             </p>
           </div>
         </motion.div>

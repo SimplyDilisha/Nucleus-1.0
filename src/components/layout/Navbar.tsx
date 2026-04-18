@@ -56,7 +56,7 @@ export default function Navbar() {
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="flex h-14 items-center justify-between px-6">
-        {/* NUCLEUS wordmark — Orbitron, cyan glow */}
+        {/* Nucleus 1.0wordmark — Orbitron, cyan glow */}
         <NavLink
           to="/dashboard"
           className="text-lg font-black tracking-[0.25em] uppercase relative group font-orbitron"

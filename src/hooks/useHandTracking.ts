@@ -217,7 +217,7 @@ export function useHandTracking(): UseHandTrackingReturn {
 
       // One-time log on first detection
       if (results.landmarks && results.landmarks.length > 0 && !fpsFramesRef.current) {
-        console.log("[Nucleus HT] ✅ Hand detected! Landmarks:", results.landmarks[0].length);
+        console.log("[Nucleus 1.0HT] ✅ Hand detected! Landmarks:", results.landmarks[0].length);
       }
 
       // FPS calculation
@@ -352,7 +352,7 @@ export function useHandTracking(): UseHandTrackingReturn {
             baseOptions: { modelAssetPath: MODEL_URL, delegate: "GPU" },
           });
         } catch (gpuErr) {
-          console.warn("[Nucleus HT] GPU delegate failed. Falling back to CPU.", gpuErr);
+          console.warn("[Nucleus 1.0HT] GPU delegate failed. Falling back to CPU.", gpuErr);
           handLandmarkerRef.current = await HandLandmarker.createFromOptions(vision, {
             ...options,
             baseOptions: { modelAssetPath: MODEL_URL, delegate: "CPU" },
@@ -400,7 +400,7 @@ export function useHandTracking(): UseHandTrackingReturn {
       const video = videoRef.current!;
       video.srcObject = stream;
       await video.play();
-      console.log("[Nucleus HT] Camera active, video playing. Resolution:", video.videoWidth, "x", video.videoHeight);
+      console.log("[Nucleus 1.0HT] Camera active, video playing. Resolution:", video.videoWidth, "x", video.videoHeight);
 
       // Reset smoothing
       lowResRef.current = false;
